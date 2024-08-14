@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root{
+  --body:  rgb(241, 187, 241);
+  --brandColor: rgb(212, 39, 68);
+  --brandColor-blue: #49557e;
+  --brandColor-fade: rgb(255,245,245);
+  --brandColor-orange: rgb(240, 150, 14);
+  --brandColor-orange-fade: rgb(236, 194, 130);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit,sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+  background-color: var(--body);
+}
+::-webkit-scrollbar{
+  display: none;
+}
+a{
+  text-decoration: none;
+  color: none;
+}
+.app{
+  width: 80%;
+  margin: auto;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

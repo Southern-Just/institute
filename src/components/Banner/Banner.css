@@ -1,0 +1,79 @@
+.banner{
+    height: 30vw;
+    margin: 5px auto;
+    margin-bottom: 15px;
+    background: url('/banner_img.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+}
+.banner-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 20%;
+    left: 5vw;
+    animation: fadeIn 3s;
+}
+.banner-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(3.5vw,21px);
+}
+.banner-contents h2 span{
+    color: var(--brandColor-orange);
+}
+.banner-contents p{
+    color: var(--brandColor-fade);
+    font-size: 1vw;
+    font-weight: 500;
+    text-align: center;
+}
+.banner-contents button{
+    border: none;
+    color: var(--brandColor-blue);
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: plum ;
+    font-size: max(1vw,13px);
+    border-radius: 50px ;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.banner-contents button:hover{
+    background-color: rgba(221, 160, 221, 0.685) ;
+}
+
+@media(max-width:1050px){
+
+    .banner-contents{
+        max-width: 45%;
+        bottom: 6%;
+        align-items: center;
+        margin-left: 10%;
+    }
+    .banner-contents button{
+        display: none;
+    }
+}
+@media(max-width:750px){
+
+    .banner-contents{
+        max-width: 65%;
+        bottom: 24%;
+
+    }
+    .banner-contents p{
+        display: none;
+    }
+    .banner-contents button{
+        padding: 2vw 4vw;
+    }
+    .banner{
+        height: 32vw;
+    }
+}
